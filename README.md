@@ -47,8 +47,8 @@ Neste ecossistema, o Bank Service A é responsável por:
 
 ### Passos
 ```bash
-git clone https://github.com/Valdemar-Andrade/interbanco-bank-service-a.git
-cd interbanco-bank-service-a
+git clone https://github.com/Valdemar-Andrade/interbanco-bank-service-b.git
+cd interbanco-bank-service-b
 mvn clean install
 mvn spring-boot:run
 ```
