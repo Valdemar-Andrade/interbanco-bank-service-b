@@ -1,7 +1,7 @@
 # interbanco-bank-service-b
 
 ## Visão Geral
-O **interbanco-bank-service-a** é um serviço backend responsável por simular uma instituição bancária participante do sistema **InterBanco**.  
+O **interbanco-bank-service-b** é um serviço backend responsável por simular uma instituição bancária participante do sistema **InterBanco**.  
 Seu papel é processar solicitações de transferência recebidas via mensageria, validar regras de negócio e persistir as operações financeiras.
 
 Este serviço faz parte de uma arquitetura distribuída orientada a eventos, utilizando **Apache Kafka** para comunicação assíncrona entre os componentes do sistema.
@@ -9,7 +9,7 @@ Este serviço faz parte de uma arquitetura distribuída orientada a eventos, uti
 ---
 
 ## Papel na Arquitetura
-Neste ecossistema, o Bank Service A é responsável por:
+Neste ecossistema, o Bank Service B é responsável por:
 
 - Representar um banco participante do sistema
 - Consumir eventos de transferência provenientes do serviço intermediário
@@ -30,7 +30,7 @@ Neste ecossistema, o Bank Service A é responsável por:
 
 ## Fluxo de Funcionamento
 1. O serviço intermediário publica um evento de solicitação de transferência no Kafka.
-2. O **interbanco-bank-service-a** consome o evento.
+2. O **interbanco-bank-service-b** consome o evento.
 3. As regras de negócio são aplicadas (validação e processamento).
 4. A operação é persistida no banco de dados.
 5. Um evento de confirmação é publicado para continuidade do fluxo.
